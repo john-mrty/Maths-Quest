@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maths Quest — Irish primary maths practice, made playful</title>
-  <meta name="description" content="Maths Quest creates short, personalised adventures based on the Irish primary maths curriculum for learners from 1st to 6th Class. Free, private and playable in your browser.">
+  <title>Maths Quest — Build confidence in maths</title>
+  <meta name="description" content="Short, playful maths practice with helpful explanations and room to make mistakes, based on the Irish primary maths curriculum for 1st to 6th Class.">
   <meta name="theme-color" content="#7655e8">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Maths Quest — Irish primary maths practice, made playful">
-  <meta property="og:description" content="Short, personalised maths adventures based on the Irish primary maths curriculum for learners from 1st to 6th Class.">
+  <meta property="og:title" content="Maths Quest — Build confidence in maths">
+  <meta property="og:description" content="Build confidence in maths, one small adventure at a time. Based on the Irish primary maths curriculum for 1st to 6th Class.">
   <meta property="og:url" content="https://maths-quests.com/">
   <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://maths-quests.com/">
@@ -191,6 +191,32 @@
     .beat .eyebrow{color:#cfc3ff}.beat h2{font-size:clamp(2.3rem,5vw,4.2rem);line-height:.98;letter-spacing:-.04em;margin-bottom:1rem}.beat p{color:#e4ddff;margin:0}
     .music-stack{display:grid;gap:.7rem}.music-layer{display:grid;grid-template-columns:2.2rem 1fr auto;align-items:center;gap:.8rem;padding:.8rem 1rem;border-radius:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14)}
     .music-layer span:last-child{font:700 .68rem/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:#dcd5ff}.music-layer.on{background:#fff;color:var(--violet-deep);box-shadow:0 8px 28px rgba(0,0,0,.18)}.music-layer.on span:last-child{color:var(--violet)}
+    .split-panel{
+      display:grid;
+      grid-template-columns:minmax(0,1.15fr) minmax(17rem,.85fr);
+      gap:clamp(2rem,7vw,6rem);
+      align-items:center;
+      padding:clamp(1.6rem,5vw,3.5rem);
+      border:1px solid rgba(255,255,255,.84);
+      border-radius:32px;
+      background:var(--paper-glass);
+      box-shadow:0 20px 55px rgba(36,24,73,.09);
+    }
+    .split-panel h2{font-size:clamp(2.35rem,5vw,4rem);line-height:1;letter-spacing:-.045em;margin-bottom:1rem;text-wrap:balance}
+    .split-panel p{color:var(--muted)}
+    .split-panel p:last-child{margin-bottom:0}
+    .belief{
+      padding:clamp(1.5rem,4vw,2.5rem);
+      border-radius:26px;
+      background:linear-gradient(145deg,var(--violet-soft),#fff7c9);
+      box-shadow:inset 0 2px 2px rgba(255,255,255,.9),0 8px 0 rgba(101,76,158,.1);
+      font-size:clamp(1.25rem,2.5vw,1.65rem);
+      font-weight:850;
+      line-height:1.3;
+    }
+    .family{background:linear-gradient(145deg,rgba(217,246,235,.9),rgba(255,253,248,.92))}
+    .family-list{display:grid;gap:.8rem;margin:0;padding:0;list-style:none}
+    .family-list li{padding:1rem 1.1rem;border-radius:17px;background:rgba(255,255,255,.72);font-weight:760;box-shadow:0 5px 0 rgba(52,131,103,.09)}
     .trust{display:grid;grid-template-columns:minmax(0,1fr) minmax(16rem,28rem);gap:clamp(2rem,8vw,7rem);align-items:start}
     .trust h2{font-size:clamp(2.4rem,5.5vw,4.2rem);line-height:1;letter-spacing:-.045em;margin-bottom:1.2rem}
     .trust-copy>p{font-size:1.12rem;color:var(--muted)}
@@ -200,7 +226,7 @@
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
     :focus-visible{outline:4px solid rgba(118,85,232,.34);outline-offset:4px}
     @media (max-width:780px){
-      .section-head,.beat,.trust{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:0}.feature-card:nth-child(n){transform:none}.feature-icon{margin-bottom:1.5rem}.video-card{border-radius:22px}.frame-note{align-items:center}.step{grid-template-columns:3.2rem 1fr}.music-stack{margin-top:.5rem}
+      .section-head,.beat,.split-panel,.trust{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:0}.feature-card:nth-child(n){transform:none}.feature-icon{margin-bottom:1.5rem}.video-card{border-radius:22px}.frame-note{align-items:center}.step{grid-template-columns:3.2rem 1fr}.music-stack{margin-top:.5rem}
     }
     @media (max-width:500px){.masthead{margin-bottom:3.5rem}.nav-link{display:none}.shell{padding-inline:1rem}.actions{align-items:stretch}.button{width:100%}.quiet-link{margin:auto}.frame-note{flex-direction:column;align-items:stretch;padding:1.1rem}.frame-note .button{width:100%;margin-top:.25rem}.video-transcript{padding-inline:1.1rem}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.button{transition:none}}
@@ -214,13 +240,13 @@
         <span class="brandmark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m16 2.5 4.1 8.3 9.2 1.3-6.7 6.5 1.6 9.2-8.2-4.3-8.2 4.3 1.6-9.2-6.7-6.5 9.2-1.3z"/></svg></span>
         <span class="wordmark">maths quest</span>
       </a>
-      <a class="nav-link" href="#why-it-works">For grown-ups</a>
+      <a class="nav-link" href="#for-grown-ups">For grown-ups</a>
     </header>
 
     <div id="top" class="hero col">
-      <p class="eyebrow">Irish primary maths curriculum · 1st–6th Class</p>
-      <h1>A maths adventure that grows with them.</h1>
-      <p class="standfirst">Based on the Irish primary maths curriculum, Maths Quest turns short practice sessions into playful, personal challenges—built around <strong>what each learner is ready for next.</strong></p>
+      <p class="eyebrow">Based on the Irish primary maths curriculum · 1st–6th Class</p>
+      <h1>Build confidence in maths, one small adventure at a time.</h1>
+      <p class="standfirst">Maths Quest gives children short, playful practice with helpful explanations and room to make mistakes, so they can finish each quest <strong>understanding a little more and feeling more capable.</strong></p>
       <div class="actions">
         <a class="button plausible-event-name=Open+Game" href="https://play.maths-quests.com/">Open game</a>
         <a class="quiet-link" href="https://github.com/john-mrty/maths-quest-for-everyone">View the source</a>
@@ -237,8 +263,8 @@
           </video>
         </div>
         <div class="frame-note">
-          <p id="video-introduction">Meet Maths Quest in 30 seconds.<br>Ready to try it? Start a quest for free.</p>
-          <a class="button plausible-event-name=Open+Game" href="https://play.maths-quests.com/">Open game</a>
+          <p id="video-introduction"><strong>See how Maths Quest works in 30 seconds.</strong><br>Choose a learner, shape their practice and start a short, confidence-building quest.</p>
+          <a class="button plausible-event-name=Open+Game" href="https://play.maths-quests.com/">Open Maths Quest</a>
         </div>
         <details class="video-transcript">
           <summary>Read video transcript</summary>
@@ -249,27 +275,37 @@
 
     <section id="why-it-works" class="reveal">
       <div class="section-head">
-        <h2>Practise without the pressure.</h2>
-        <p>Every learner gets their own plan, pace and progress. The game keeps challenge useful and help close at hand.</p>
+        <h2>Confidence grows through understanding—not pressure.</h2>
+        <p>Children become more confident when they have time to think, useful help when they need it and another chance when something goes wrong.</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">✦</div><h3>Made for the learner</h3><p>Choose a class level and the topics covered at school. Maths Quest uses accuracy and help use to shape the next mix.</p></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">?</div><h3>Help that teaches</h3><p>A tip, a visual model and a similar example are always available. Mistakes become another route to understanding.</p></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">♫</div><h3>Recall with a rhythm</h3><p>Beat Quest turns accurate times-table streaks into music, adding drums, bass, chords and melody as confidence grows.</p></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">↻</div><h3>Mistakes are safe</h3><p>A wrong answer opens another route to understanding. Children can try a tip, see a visual model and work through a similar example.</p></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">?</div><h3>Help builds independence</h3><p>Support is always close, but the aim is to help each learner work things out for themselves.</p></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">∞</div><h3>Understanding comes before speed</h3><p>Maths Quest builds ideas through patterns, visual explanations and thoughtful repetition before introducing faster recall.</p></article>
       </div>
     </section>
 
     <section class="reveal">
-      <div class="section-head"><h2>Ready in three small steps.</h2><p>No accounts, setup codes or class dashboards. A child can get from first visit to first question in moments.</p></div>
+      <div class="section-head"><h2>Ready in three small steps.</h2><p>No accounts, setup codes or class dashboards. Go from opening the game to the first question in moments.</p></div>
       <div class="steps col">
-        <article class="step"><div><h3>Create a learner</h3><p>Add a first name or nickname, class level and one of the friendly character avatars.</p></div></article>
-        <article class="step"><div><h3>Choose what to practise</h3><p>Start with class-appropriate topics and include only what is useful right now. The plan can be changed any time.</p></div></article>
-        <article class="step"><div><h3>Pick today’s adventure</h3><p>Learn with extra support, practise a personal mix, try a challenge, or build fluency in Beat Quest.</p></div></article>
+        <article class="step"><div><h3>Create a learner</h3><p>Choose a first name or nickname, class level and friendly character avatar.</p></div></article>
+        <article class="step"><div><h3>Choose what to practise</h3><p>Include the topics being covered at school and leave everything else for later.</p></div></article>
+        <article class="step"><div><h3>Pick today’s adventure</h3><p>Learn with extra support, practise a personal mix, try a challenge or build fluency through music in Beat Quest.</p></div></article>
       </div>
     </section>
 
+    <section class="split-panel reveal">
+      <div>
+        <p class="eyebrow">Personalisation</p>
+        <h2>Practice that responds without judging.</h2>
+        <p>Maths Quest notices which ideas are becoming secure and which ones could use another look. It revisits tricky topics gently, keeps familiar skills fresh and recognises answers completed with help as part of learning.</p>
+        <p>There are no leaderboards, public rankings or comparisons with other children.</p>
+      </div>
+      <div class="belief">Progress is personal. Help is part of learning.</div>
+    </section>
+
     <section class="beat reveal" aria-labelledby="beat-title">
-      <div><p class="eyebrow">Beat Quest</p><h2 id="beat-title">Every streak adds to the track.</h2><p>Start quietly. Answer accurately. Hear the music build layer by layer—from the first drum beat to the full melody.</p></div>
+      <div><p class="eyebrow">Beat Quest</p><h2 id="beat-title">Turn growing fluency into music.</h2><p>Begin by seeing the pattern. As accurate times-table streaks grow, the track adds drums, bass, chords and melody.</p><p>The music makes practice playful while the learning remains the point.</p></div>
       <div class="music-stack" aria-label="Music layers unlocked through correct answers">
         <div class="music-layer on"><span>🥁</span><strong>Drums</strong><span>1st streak</span></div>
         <div class="music-layer on"><span>♩</span><strong>Bass</strong><span>Keep going</span></div>
@@ -278,22 +314,47 @@
       </div>
     </section>
 
-    <section class="trust reveal">
-      <div class="trust-copy"><p class="eyebrow">Built with grown-ups in mind</p><h2>Private by design. Useful by choice.</h2><p>Maths Quest is aligned with the Irish primary maths curriculum and supports classroom learning without trying to replace a teacher’s judgement.</p></div>
+    <section class="split-panel family reveal">
+      <div>
+        <p class="eyebrow">Designed for home</p>
+        <h2>Short quests with a clear ending.</h2>
+        <p>Maths Quest is made to fit into family life. Sessions are short, adjustable and easy to finish. Missing a day carries no penalty, and returning should always feel welcoming.</p>
+        <p>Sound, celebrations, topics and session length can all be adjusted by a grown-up.</p>
+      </div>
+      <ul class="family-list">
+        <li>Short, adjustable sessions</li>
+        <li>No penalty for missing a day</li>
+        <li>A clear and satisfying finish</li>
+      </ul>
+    </section>
+
+    <section id="for-grown-ups" class="trust reveal">
+      <div class="trust-copy"><p class="eyebrow">Built with grown-ups in mind</p><h2>Useful insight without extra pressure.</h2><p>The protected grown-ups area shows what has been practised, where confidence is growing and where a little support might help.</p></div>
       <ul class="trust-list">
         <li><div><strong>Progress stays on the device</strong><span>Names, ages, photos, answers, scores and progress are never sent.</span></div></li>
         <li><div><strong>No account or advertising</strong><span>Open the game and start playing.</span></div></li>
-        <li><div><strong>Protected grown-up controls</strong><span>Adjust topics, session length, sound and timed play.</span></div></li>
         <li><div><strong>No public rankings</strong><span>Progress is personal, never a competition with other children.</span></div></li>
+        <li><div><strong>No upgrade prompts directed at children</strong><span>Maths Quest keeps commercial decisions away from the child’s experience.</span></div></li>
+        <li><div><strong>Cookie-free analytics</strong><span>Anonymous visits, game starts and completed quests are counted.</span></div></li>
       </ul>
+    </section>
+
+    <section class="split-panel reveal">
+      <div>
+        <p class="eyebrow">Why Maths Quest exists</p>
+        <h2>Designed by a parent for life at home.</h2>
+        <p>Maths Quest began with a simple question: could maths practice be playful and effective without creating more pressure?</p>
+        <p>It brings together experience as a parent, educational designer and product designer, with equal care given to the learning and the experience.</p>
+      </div>
+      <div class="belief">“I understand that a little better. I can do this.”</div>
     </section>
 
     <section class="closing reveal">
       <span class="brandmark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m16 2.5 4.1 8.3 9.2 1.3-6.7 6.5 1.6 9.2-8.2-4.3-8.2 4.3 1.6-9.2-6.7-6.5 9.2-1.3z"/></svg></span>
-      <h2>Ready for today’s quest?</h2>
-      <p>Choose a learner, make a plan and turn a few minutes of maths practice into something worth exploring.</p>
-      <div class="actions"><a class="button plausible-event-name=Open+Game" href="https://play.maths-quests.com/">Open game</a></div>
-      <p class="fineprint">Free and open source. Cookie-free analytics count visits and anonymous game starts.</p>
+      <h2>Ready for a small maths adventure?</h2>
+      <p>Choose a learner, shape their practice and help confidence grow one quest at a time.</p>
+      <div class="actions"><a class="button plausible-event-name=Open+Game" href="https://play.maths-quests.com/">Play Maths Quest</a></div>
+      <p class="fineprint">Free · Private · No download</p>
     </section>
 
     <footer><span>Made by <a href="https://www.johnmoriarty.me/">John Moriarty</a>.</span><span><a href="https://github.com/john-mrty/maths-quest-for-everyone">Source on GitHub</a> · <span id="year"></span></span></footer>
